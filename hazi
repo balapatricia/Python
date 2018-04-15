@@ -4,7 +4,7 @@ def first_100_Fibonacci_number():
     A=[0,1]
     f0=0
     f1=1
-    while len(A) != 100:
+    while len(A) != 101:
         f_kovi=f0+f1
         A.append(f_kovi)
         f0=f1
