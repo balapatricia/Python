@@ -1,1 +1,17 @@
 #1
+
+def first_100_Fibonacci_number():
+    A=[0,1]
+    f0=0
+    f1=1
+    while len(A) != 100:
+        f_kovi=f0+f1
+        A.append(f_kovi)
+        f0=f1
+        f1=f_kovi
+    return A
+
+print(first_100_Fibonacci_number())
+
+
+#5
