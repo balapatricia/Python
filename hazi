@@ -15,7 +15,21 @@ print(first_100_Fibonacci_number())
 
 
 #5
+
 def PlusMinusNothing():
     A=[]
-    numbers=[1,2,3,4,5,6,7,8,9]
     p=['+','-','']
+    for i in range(3):
+        for j in range(3):
+            for k in range(3):
+                for l in range(3):
+                    for m in range(3):
+                        for n in range(3):
+                            for o in range(3):
+                                for q in range(3):
+                                    x='1{}2{}3{}4{}5{}6{}7{}8{}9'.format(p[i],p[j],p[k],p[l],p[m],p[n],p[o],p[q])
+                                    if x==100:
+                                        A.append(x)
+    return A
+
+print(PlusMinusNothing())
