@@ -58,7 +58,8 @@ MorseDictionary = {'A': '.-',     'B': '-...',   'C': '-.-.',
 MorseReverse = {value:key for key,value in MorseDictionary.items()}
 
 def ConvertEnglishtoMorseAndBack(MorseDictionary,MorseReverse):
-
+    text = input("Please type the text!: ")
+    convertedtext = ''
 
 
 
