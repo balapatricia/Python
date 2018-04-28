@@ -70,6 +70,8 @@ def ConvertEnglishtoMorseAndBack(MorseDictionary,MorseReverse):
                 convertedtext += ' '
     else:
         words=text.split('   ')
+        for i in words:
+            letters = i.split()
                 
 
 
