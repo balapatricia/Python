@@ -60,7 +60,7 @@ MorseReverse = {value:key for key,value in MorseDictionary.items()}
 def ConvertEnglishtoMorseAndBack(MorseDictionary,MorseReverse):
     text = input("Please type the text!: ")
     convertedtext = ''
-        if 'A' <= text[0] and text[0] <= 'Z' or 'a'<= text[0] and text[0] <= 'z':
+    if 'A' <= text[0] and text[0] <= 'Z' or 'a'<= text[0] and text[0] <= 'z':
         for i in text:
             if i == ' ':
                 convertedtext += '   '
@@ -69,6 +69,7 @@ def ConvertEnglishtoMorseAndBack(MorseDictionary,MorseReverse):
                 convertedtext += MorseDictionary[i]
                 convertedtext += ' '
     else:
+        words=text.split('   ')
                 
 
 
