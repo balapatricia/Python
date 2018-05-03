@@ -74,8 +74,10 @@ def ConvertEnglishtoMorseAndBack(MorseDictionary,MorseReverse):
             letters = i.split()
             for j in letters:
                 convertedtext += MorseReverse[j]
-            
+            convertedtext += ' '
     return convertedtext
+
+print(ConvertEnglishtoMorseAndBack(MorseDictionary,MorseReverse))
                 
 
 
