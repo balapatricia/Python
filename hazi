@@ -57,7 +57,7 @@ MorseDictionary = {'A': '.-',     'B': '-...',   'C': '-.-.',
 
 MorseReverse = {value:key for key,value in MorseDictionary.items()}
 
-def ConvertEnglishtoMorseAndBack(MorseDictionary,MorseReverse):
+def ConvertEnglishtoMorseAndBack():
     text = input("Please type the text!: ")
     convertedtext = ''
     if 'A' <= text[0] and text[0] <= 'Z' or 'a'<= text[0] and text[0] <= 'z':
@@ -77,7 +77,7 @@ def ConvertEnglishtoMorseAndBack(MorseDictionary,MorseReverse):
             convertedtext += ' '
     return convertedtext
 
-print(ConvertEnglishtoMorseAndBack(MorseDictionary,MorseReverse))
+print(ConvertEnglishtoMorseAndBack())
                 
 
 
