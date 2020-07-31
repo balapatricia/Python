@@ -1,0 +1,80 @@
+#1
+
+def first_100_Fibonacci_number():
+    A=[0,1]
+    f0=0
+    f1=1
+    while len(A) != 100:
+        f_next=f0+f1
+        A.append(f_next)
+        f0=f1
+        f1=f_next
+    return A
+
+print(first_100_Fibonacci_number())
+
+
+#5
+
+def PlusMinusNothing(number):
+    A=[]
+    a=['+','-','']
+    for i in range(3):
+        for j in range(3):
+            for k in range(3):
+                for l in range(3):
+                    for m in range(3):
+                        for n in range(3):
+                            for o in range(3):
+                                for p in range(3):
+                                    x='1{}2{}3{}4{}5{}6{}7{}8{}9'.format(a[i],a[j],a[k],a[l],a[m],a[n],a[o],a[p])
+                                    if eval(x)==number:
+                                        A.append(x)
+    return A
+
+print(PlusMinusNothing(100))
+
+
+#6
+
+MorseDictionary = {'A': '.-',     'B': '-...',   'C': '-.-.',
+        'D': '-..',    'E': '.',      'F': '..-.',
+        'G': '--.',    'H': '....',   'I': '..',
+        'J': '.---',   'K': '-.-',    'L': '.-..',
+        'M': '--',     'N': '-.',     'O': '---',
+        'P': '.--.',   'Q': '--.-',   'R': '.-.',
+     	'S': '...',    'T': '-',      'U': '..-',
+        'V': '...-',   'W': '.--',    'X': '-..-',
+        'Y': '-.--',   'Z': '--..',
+        '0': '-----',  '1': '.----',  '2': '..---',
+        '3': '...--',  '4': '....-',  '5': '.....',
+        '6': '-....',  '7': '--...',  '8': '---..',
+        '9': '----.',
+        "." : ".-.-.-", "," : "--..--", ":" : "---...",
+        "?" : "..--..", "'" : ".----.", "-" : "-....-",
+        "/" : "-..-.", "@" : ".--.-.", "=" : "-...-",
+        "!" : "-.-.--"}
+
+MorseReverse = {value:key for key,value in MorseDictionary.items()}
+
+def ConvertEnglishtoMorseAndBack():
+    text = input("Please type the text!: ")
+    convertedtext = ''
+    if 'A' <= text[0] and text[0] <= 'Z' or 'a'<= text[0] and text[0] <= 'z':
+        for i in text:
+            if i == ' ':
+                convertedtext += '   '
+            else:
+                i = i.upper()
+                convertedtext += MorseDictionary[i]
+                convertedtext += ' '
+    else:
+        words=text.split('   ')
+        for i in words:
+            letters = i.split()
+            for j in letters:
+                convertedtext += MorseReverse[j]
+            convertedtext += ' '
+    return convertedtext
+
+print(ConvertEnglishtoMorseAndBack())
