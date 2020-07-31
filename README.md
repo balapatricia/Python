@@ -1,2 +1,2 @@
-# proghazi
+# Funny Python things
 
