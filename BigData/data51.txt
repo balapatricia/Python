@@ -1,0 +1,29 @@
+The attributes are:
+---------------------
+
+1. Date: in UTC. - Dátum
+2. Time: in UTC. - Idő
+3. Indoor temperature (dinning-room), in ÂºC. - Belső hőmérséklet (étkező)
+4. Indoor temperature (room), in ÂºC. - Belső hőmérséklet (szoba)
+5. Weather forecast temperature, in ÂºC. - Időjárás előrejelzés hőmérséklete
+6. Carbon dioxide in ppm (dinning room). - Szén-dioxid tartalom (étkező)
+7. Carbon dioxide in ppm (room). - Szén-dioxid tartalom (szoba)
+8. Relative humidity (dinning room), in %. - Relatív páratartalom (étkező)
+9. Relative humidity (room), in %. - Relatív páratartalom (szoba)
+10. Lighting (dinning room), in Lux. - Fény, világítás (étkező)
+11. Lighting (room), in Lux. - Fény, világítás (szoba)
+12. Rain, the proportion of the last 15 minutes where rain was detected (a value in range [0,1]). - Eső, az elmúlt 15 percben vett arányas
+13. Sun dusk. - Alkonyat
+14. Wind, in m/s. - Szél
+15. Sun light in west facade, in Lux. - Napfény a nyugati homlokzaton
+16. Sun light in east facade, in Lux. - Napfény a keleti homlokzaton
+17. Sun light in south facade, in Lux. - Napfény a déli homlokzaton
+18. Sun irradiance, in W/m2. - Nap sugárzása
+19. Enthalpic motor 1, 0 or 1 (on-off). - Légkondi?
+20. Enthalpic motor 2, 0 or 1 (on-off).
+21. Enthalpic motor turbo, 0 or 1 (on-off).
+22. Outdoor temperature, in ÂºC. - Külső hőmérséklet
+23. Outdoor relative humidity, in %. - Külső relatív páratartalom
+24. Day of the week (computed from the date), 1=Monday, 7=Sunday. - A hét napja
+
+<font size="3"></font>
