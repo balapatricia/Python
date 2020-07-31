@@ -1,0 +1,53 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'C:\Users\Panna\Desktop\egyetem\III.félév\prog\designer\hf1.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Board(object):
+
+    btnlist=[]
+
+    def setupBoard(self, Board, n):
+        Board.setObjectName("Board")
+
+        x=0
+        for j in range(1,n+1):
+            for i in range(1,n+1):
+                self.btnlist.append(x)
+                self.btnlist[x] = QtWidgets.QPushButton(Board)
+                self.btnlist[x].setGeometry(QtCore.QRect(i*50, j*50, 50, 50))
+                self.btnlist[x].setObjectName('button')
+                x+=1
+        Board.resize(100+n*50, 100+n*50)
+
+        self.retranslateUi(Board)
+        QtCore.QMetaObject.connectSlotsByName(Board)
+
+        for i in range(0,len(self.btnlist)):
+            self.btnlist[i].clicked.connect(lambda:self.put(i))
+
+    def retranslateUi(self, Board):
+        _translate = QtCore.QCoreApplication.translate
+        Board.setWindowTitle(_translate("Board", "Game board"))
+
+
+    def put(self,b):
+        _translate = QtCore.QCoreApplication.translate
+        print(b)
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Board = QtWidgets.QMainWindow()
+    ui = Ui_Board()
+    ui.setupBoard(Board)
+    Board.show()
+    sys.exit(app.exec_())
+
